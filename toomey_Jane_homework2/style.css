@@ -1,0 +1,271 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  background-color: white;
+}
+
+.hero {
+  background-color: rgb(16, 16, 31);
+  color: white;
+  font-size: 40px;
+}
+.contact-form {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-text {
+  padding-left: 250px;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  padding-top: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: column-reverse;
+  font-size: 30px;
+}
+ul.show {
+  display: block;
+}
+
+li {
+  width: 200px;
+  text-decoration: none;
+}
+h1 {
+  font-size: 90px;
+  margin: 0;
+  font-weight: 700;
+}
+h2 {
+  font-size: 50px;
+}
+p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.subtext {
+  font-size: 15px;
+  font-weight: 400;
+}
+.name-area {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.name-title {
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+.button {
+  width: 200px;
+  height: 55px;
+  background-color: lightseagreen;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+.button:hover {
+  background-color: teal;
+}
+.button:active {
+  background-color: rgb(0, 83, 83);
+  color: lightseagreen;
+}
+.social {
+  margin: 10px;
+}
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+.headshot {
+  width: 300px;
+  border-radius: 150px;
+  display: flex;
+  align-items: right;
+}
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.sub-section-alt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+.project1-container {
+  width: 85%;
+  max-width: 1500px;
+  justify-content: center;
+  padding-left: 107px;
+  padding-bottom: 20px;
+}
+
+.project1 {
+  box-shadow: 5px 5px 20px lightgray;
+  padding-bottom: 10px;
+}
+
+.project {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  padding: 37px;
+  box-shadow: 5px 5px 20px lightgray;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+  }
+  .project1-container {
+    width: 65%;
+    justify-content: center;
+  }
+  form {
+    width: 80%;
+    max-width: 300px;
+    align-items: center;
+  }
+}
+.project-image {
+  width: 300px;
+  height: 200px;
+}
+.project1-image {
+  width: 500px;
+  height: 300px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.project-link {
+  text-decoration: none;
+  color: lightseagreen;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  width: 80%;
+  max-width: 900px;
+  padding-right: 30px;
+  align-items: center;
+}
+.input-group {
+  margin-bottom: 40px;
+  position: relative;
+}
+.input,
+textarea {
+  width: 100%;
+  padding: 20px;
+  outline: 0;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  font-size: 13px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 2px;
+  top: 0;
+  padding: 2px;
+  color: black;
+  cursor: text;
+  transition: 0.2s;
+}
+button {
+  padding: 10px 0;
+  color: black;
+  outline: none;
+  background: lightseagreen;
+  border: 1px solid teal;
+  width: 100%;
+  cursor: pointer;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .input-group {
+  flex-basis: 50%;
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+.footer {
+  margin-top: 20px;
+}
+
+.socials {
+  padding-top: 40px;
+}
+.hamburger {
+  display: none;
+}
+.hamburger:focus {
+  outline: 0;
+}
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display: none;
+    background-color: rgb(24, 24, 49);
+    margin: 0px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(24, 24, 49);
+  }
+}
